@@ -188,9 +188,9 @@ void print_Sales_Report(double * sales_Numbers_Doubles) {
 	for  (int i = 11; i >= 0; i--)	{ 
 		
 		if ((stats.ascending_Order[i] >= 2 &&  stats.ascending_Order[i] <= 7) || stats.ascending_Order[i] == 9 || stats.ascending_Order[i] == 0) {
-			printf("%s\t\t%.2f\n", months[stats.ascending_Order[i]], sales_Numbers_Doubles[stats.ascending_Order[i]]);
+			printf("%s\t\t$%.2f\n", months[stats.ascending_Order[i]], sales_Numbers_Doubles[stats.ascending_Order[i]]);
 		} else {
-			printf("%s\t%.2f\n", months[stats.ascending_Order[i]], sales_Numbers_Doubles[stats.ascending_Order[i]]);
+			printf("%s\t$%.2f\n", months[stats.ascending_Order[i]], sales_Numbers_Doubles[stats.ascending_Order[i]]);
 		}
 
 	}
